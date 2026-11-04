@@ -1,0 +1,238 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Theme tokens: Mantis Analytics base with three colour roles. Brand (purple) for the mark and primary actions,
+   interactive (blue) for links, focus and selection, risk (rose) only for risk and money at risk. */
+:root {
+  --bg: #f7f4ee;
+  --surface: #ffffff;
+  --surface-2: #f1ede5;
+  --border: #e4dfd5;
+  --fg: #1f1d24;
+  --muted: #5f5c66;
+  --brand: #7c1fe6;
+  --brand-fg: #ffffff;
+  --brand-soft: #f1e7ff;
+  --interactive: #0a63d1;
+  --interactive-fg: #ffffff;
+  --interactive-soft: #e3eeff;
+  --risk: #c72860; /* #d6336c darkened to keep 4.5:1 text contrast on --bg */
+  --risk-soft: #fce4ec;
+  --lavender: #a6a7ff;
+  --ok: #147340;
+  --proposed: #8f5b0a;
+  --conflict: #c42f2f;
+  --map-land: #e9e4da;
+  --map-line: #d6cfc2;
+  --elevation: 0 1px 2px rgb(31 29 36 / 0.05), 0 2px 8px -2px rgb(31 29 36 / 0.07);
+  --card-border: var(--border);
+  --agent-from: #6d14d6; /* the Agent button: label and logo on the purple end */
+  --agent-to: #ffffff;
+  --agent-fg: #ffffff;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0c0b0f;
+  --surface: #16151a;
+  --surface-2: #1e1d23;
+  --border: #2b2a31;
+  --fg: #f2f1f5;
+  --muted: #a3a1ab;
+  --brand: #b78cff;
+  --brand-fg: #120a1f;
+  --brand-soft: #2a1f42;
+  --interactive: #5ea8ff;
+  --interactive-fg: #07121f;
+  --interactive-soft: #142740;
+  --risk: #ff7aa6;
+  --risk-soft: #3a1726;
+  --lavender: #a6a7ff;
+  --ok: #3ccb7f;
+  --proposed: #f2b84b;
+  --conflict: #ff6b6b;
+  --map-land: #1f1e24;
+  --map-line: #2e2d34;
+  --elevation: none;
+  --card-border: color-mix(in srgb, var(--brand) 16%, var(--border));
+  --agent-from: #5b12b8;
+  --agent-to: #efe6ff;
+  --agent-fg: #ffffff;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-brand-soft: var(--brand-soft);
+  --color-interactive: var(--interactive);
+  --color-interactive-fg: var(--interactive-fg);
+  --color-interactive-soft: var(--interactive-soft);
+  --color-risk: var(--risk);
+  --color-risk-soft: var(--risk-soft);
+  --color-lavender: var(--lavender);
+  --color-ok: var(--ok);
+  --color-proposed: var(--proposed);
+  --color-conflict: var(--conflict);
+  --color-agent-from: var(--agent-from);
+  --color-agent-to: var(--agent-to);
+  --color-agent-fg: var(--agent-fg);
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  * {
+    @apply border-border;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-interactive;
+  }
+}
+
+/* App chrome only (header, key-figure tiles, empty states), never behind data: a soft two-stop radial gradient
+   from brand to interactive and a faint fractal noise, inlined as a data URI so nothing is fetched. */
+:root {
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  --chrome-a: 9%;
+  --chrome-b: 7%;
+}
+.dark {
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  --chrome-a: 16%;
+  --chrome-b: 12%;
+}
+.chrome {
+  background-color: var(--surface);
+  background-image:
+    var(--noise),
+    radial-gradient(120% 180% at 0% 0%, color-mix(in srgb, var(--brand) var(--chrome-a), transparent), transparent 60%),
+    radial-gradient(120% 180% at 100% 100%, color-mix(in srgb, var(--interactive) var(--chrome-b), transparent), transparent 60%);
+}
+
+/* Cards: a soft shadow in light mode, a faint brand-tinted border in dark mode. */
+.card {
+  border-color: var(--card-border);
+  box-shadow: var(--elevation);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Printing (reports): no app chrome, light ink on white whatever the theme, sections kept whole where they fit. */
+@media print {
+  @page {
+    margin: 14mm 12mm;
+  }
+  html,
+  html.dark {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f3f3f3;
+    --border: #c8c8c8;
+    --fg: #000000;
+    --muted: #4a4a4a;
+    --brand: #7a00cc;
+    --brand-soft: #ffffff;
+    --interactive: #000000;
+    --interactive-soft: #ffffff;
+    --risk: #a61e4d;
+    --risk-soft: #ffffff;
+    --elevation: none;
+    --card-border: var(--border);
+    --ok: #1a7f45;
+    --proposed: #8a5a12;
+    --conflict: #b42323;
+    color-scheme: light;
+  }
+  .chrome {
+    background: none !important;
+  }
+  html,
+  body,
+  #root {
+    height: auto !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  /* App chrome and anything marked for the screen only. */
+  header:has(> nav[aria-label="Main"]),
+  nav[aria-label="Main"],
+  [data-print="hide"],
+  [data-sonner-toaster],
+  button {
+    display: none !important;
+  }
+  /* The shell and the report pane are fixed-height scroll boxes on screen; on paper they flow over pages. */
+  div:has(> main),
+  main,
+  [data-print="page"],
+  [data-print="flow"] {
+    display: block !important;
+    height: auto !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+  .report {
+    max-width: none !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+  .report-head {
+    margin-bottom: 4mm;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 3mm;
+  }
+  .report-section {
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin-top: 6mm;
+    break-inside: avoid;
+  }
+  .report-section-head {
+    padding-top: 2mm;
+    border-top: 1px solid var(--border);
+    break-after: avoid;
+  }
+  .report-scroll {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .report-metrics > div,
+  .report-chart,
+  .report-chart figure {
+    break-inside: avoid;
+  }
+  .report thead {
+    position: static !important;
+    display: table-header-group;
+  }
+  .report tr {
+    break-inside: avoid;
+  }
+  .report table {
+    font-size: 9pt;
+  }
+  .report a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

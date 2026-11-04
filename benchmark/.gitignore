@@ -1,0 +1,17 @@
+# Customer/PoC data: never commit (repo goes public at submission)
+data/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+outputs/
+.cache/

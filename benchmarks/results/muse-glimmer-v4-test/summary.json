@@ -1,0 +1,658 @@
+{
+ "name": "muse-glimmer-v4-test",
+ "date": "2026-11-04 12:51 UTC",
+ "commit": "4785675+dirty",
+ "agent_version": "v4",
+ "prompt_version": "68248f42aa79",
+ "variant": "full",
+ "provider": "glimmer",
+ "model": "muse-glimmer",
+ "split": "test",
+ "runs_per_case": 3,
+ "suite_seed": 7,
+ "suite_generator": 1,
+ "graph": {
+  "components": 160,
+  "suppliers": 254,
+  "assemblies": 8,
+  "revenue_eur": 3400000000
+ },
+ "overall": {
+  "cases": 22,
+  "runs": 66,
+  "skill_mean": 0.9812,
+  "skill_ci95": [
+   0.9557,
+   0.9968
+  ],
+  "skill_median": 0.9996,
+  "playbook_skill_mean": 0.8409,
+  "valid_rate": 1.0,
+  "at_least_playbook": 0.9848,
+  "near_optimiser": 0.9242,
+  "cost_agent": 104297488,
+  "cost_playbook": 165700498,
+  "cost_optimiser": 48594815,
+  "cost_do_nothing": 822739730,
+  "usd_per_run": 0.0,
+  "tokens_per_run": 183626,
+  "tool_calls_per_run": 16.0
+ },
+ "by_split": {},
+ "by_type": {
+  "supplier_outage": {
+   "cases": 5,
+   "runs": 15,
+   "skill_mean": 0.9995,
+   "skill_ci95": [
+    0.9986,
+    1.0
+   ],
+   "skill_median": 0.9998,
+   "playbook_skill_mean": 0.9928,
+   "valid_rate": 1.0,
+   "at_least_playbook": 1.0,
+   "near_optimiser": 1.0,
+   "cost_agent": 1503210,
+   "cost_playbook": 2773657,
+   "cost_optimiser": 1464490,
+   "cost_do_nothing": 107625256,
+   "usd_per_run": 0.0,
+   "tokens_per_run": 112255,
+   "tool_calls_per_run": 15.8
+  },
+  "export_restriction": {
+   "cases": 5,
+   "runs": 15,
+   "skill_mean": 0.9992,
+   "skill_ci95": [
+    0.9985,
+    0.9998
+   ],
+   "skill_median": 0.9994,
+   "playbook_skill_mean": 0.9986,
+   "valid_rate": 1.0,
+   "at_least_playbook": 1.0,
+   "near_optimiser": 1.0,
+   "cost_agent": 349133,
+   "cost_playbook": 367563,
+   "cost_optimiser": 262159,
+   "cost_do_nothing": 77844462,
+   "usd_per_run": 0.0,
+   "tokens_per_run": 114947,
+   "tool_calls_per_run": 16.5
+  },
+  "route_closure": {
+   "cases": 3,
+   "runs": 9,
+   "skill_mean": 0.9929,
+   "skill_ci95": [
+    0.9807,
+    1.0
+   ],
+   "skill_median": 1.0,
+   "playbook_skill_mean": 0.9689,
+   "valid_rate": 1.0,
+   "at_least_playbook": 1.0,
+   "near_optimiser": 1.0,
+   "cost_agent": 1276716,
+   "cost_playbook": 2014906,
+   "cost_optimiser": 1121267,
+   "cost_do_nothing": 30485428,
+   "usd_per_run": 0.0,
+   "tokens_per_run": 155493,
+   "tool_calls_per_run": 14.4
+  },
+  "tariff": {
+   "cases": 5,
+   "runs": 15,
+   "skill_mean": 0.9841,
+   "skill_ci95": [
+    0.9587,
+    0.9992
+   ],
+   "skill_median": 1.0,
+   "playbook_skill_mean": 0.4644,
+   "valid_rate": 1.0,
+   "at_least_playbook": 1.0,
+   "near_optimiser": 0.9333,
+   "cost_agent": 2827558,
+   "cost_playbook": 3197344,
+   "cost_optimiser": 2822163,
+   "cost_do_nothing": 3479788,
+   "usd_per_run": 0.0,
+   "tokens_per_run": 195700,
+   "tool_calls_per_run": 16.0
+  },
+  "shortage": {
+   "cases": 4,
+   "runs": 12,
+   "skill_mean": 0.9234,
+   "skill_ci95": [
+    0.8062,
+    0.9941
+   ],
+   "skill_median": 0.9912,
+   "playbook_skill_mean": 0.8283,
+   "valid_rate": 1.0,
+   "at_least_playbook": 0.9167,
+   "near_optimiser": 0.6667,
+   "cost_agent": 98340870,
+   "cost_playbook": 157347028,
+   "cost_optimiser": 42924736,
+   "cost_do_nothing": 603304795,
+   "usd_per_run": 0.0,
+   "tokens_per_run": 364694,
+   "tool_calls_per_run": 16.5
+  }
+ },
+ "cases": [
+  {
+   "case": "export_restriction-2",
+   "type": "export_restriction",
+   "runs": 3,
+   "skill": [
+    0.9994,
+    0.9994,
+    0.9994
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9994,
+   "do_nothing": 5985000,
+   "optimiser": 63900,
+   "cost": [
+    67540,
+    67540,
+    67540
+   ]
+  },
+  {
+   "case": "export_restriction-3",
+   "type": "export_restriction",
+   "runs": 3,
+   "skill": [
+    0.9999,
+    0.9999,
+    0.9999
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9999,
+   "do_nothing": 18225385,
+   "optimiser": 923,
+   "cost": [
+    1884,
+    1884,
+    1884
+   ]
+  },
+  {
+   "case": "export_restriction-4",
+   "type": "export_restriction",
+   "runs": 3,
+   "skill": [
+    0.9985,
+    0.9986,
+    0.9986
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9985,
+   "do_nothing": 29694808,
+   "optimiser": 70196,
+   "cost": [
+    115069,
+    111759,
+    112043
+   ]
+  },
+  {
+   "case": "export_restriction-5",
+   "type": "export_restriction",
+   "runs": 3,
+   "skill": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9976,
+   "do_nothing": 4018500,
+   "optimiser": 329,
+   "cost": [
+    297,
+    297,
+    299
+   ]
+  },
+  {
+   "case": "export_restriction-6",
+   "type": "export_restriction",
+   "runs": 3,
+   "skill": [
+    0.9977,
+    0.9987,
+    0.9977
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9977,
+   "do_nothing": 19920769,
+   "optimiser": 126811,
+   "cost": [
+    173057,
+    153247,
+    173057
+   ]
+  },
+  {
+   "case": "route_closure-2",
+   "type": "route_closure",
+   "runs": 3,
+   "skill": [
+    1.0007,
+    0.9837,
+    0.9577
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9306,
+   "do_nothing": 7794872,
+   "optimiser": 11018,
+   "cost": [
+    5509,
+    137720,
+    340538
+   ]
+  },
+  {
+   "case": "route_closure-3",
+   "type": "route_closure",
+   "runs": 3,
+   "skill": [
+    1.0,
+    0.9938,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9938,
+   "do_nothing": 2565000,
+   "optimiser": 59274,
+   "cost": [
+    59274,
+    74910,
+    59274
+   ]
+  },
+  {
+   "case": "route_closure-4",
+   "type": "route_closure",
+   "runs": 3,
+   "skill": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9823,
+   "do_nothing": 20125557,
+   "optimiser": 1050975,
+   "cost": [
+    1050975,
+    1050975,
+    1050975
+   ]
+  },
+  {
+   "case": "shortage-2",
+   "type": "shortage",
+   "runs": 3,
+   "skill": [
+    0.996,
+    0.996,
+    0.996
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.7222,
+   "do_nothing": 190474013,
+   "optimiser": 27590298,
+   "cost": [
+    28240460,
+    28240460,
+    28240460
+   ]
+  },
+  {
+   "case": "shortage-3",
+   "type": "shortage",
+   "runs": 3,
+   "skill": [
+    0.9546,
+    0.9322,
+    0.9963
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.891,
+   "do_nothing": 109020709,
+   "optimiser": 1420490,
+   "cost": [
+    6300525,
+    8719324,
+    1817799
+   ]
+  },
+  {
+   "case": "shortage-4",
+   "type": "shortage",
+   "runs": 3,
+   "skill": [
+    0.993,
+    0.9894,
+    0.994
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9896,
+   "do_nothing": 96763346,
+   "optimiser": 1697862,
+   "cost": [
+    2363233,
+    2706855,
+    2265275
+   ]
+  },
+  {
+   "case": "shortage-5",
+   "type": "shortage",
+   "runs": 3,
+   "skill": [
+    0.7165,
+    0.8,
+    0.7163
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.7102,
+   "do_nothing": 207046727,
+   "optimiser": 12216085,
+   "cost": [
+    67459700,
+    51186691,
+    67481828
+   ]
+  },
+  {
+   "case": "supplier_outage-2",
+   "type": "supplier_outage",
+   "runs": 3,
+   "skill": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 1.0,
+   "do_nothing": 5700000,
+   "optimiser": 791113,
+   "cost": [
+    791113,
+    791113,
+    791113
+   ]
+  },
+  {
+   "case": "supplier_outage-3",
+   "type": "supplier_outage",
+   "runs": 3,
+   "skill": [
+    0.9998,
+    0.9998,
+    0.9998
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9998,
+   "do_nothing": 25467308,
+   "optimiser": 598946,
+   "cost": [
+    604347,
+    604347,
+    604347
+   ]
+  },
+  {
+   "case": "supplier_outage-4",
+   "type": "supplier_outage",
+   "runs": 3,
+   "skill": [
+    0.9985,
+    0.9974,
+    0.9975
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9974,
+   "do_nothing": 12881026,
+   "optimiser": 25026,
+   "cost": [
+    44685,
+    58337,
+    57102
+   ]
+  },
+  {
+   "case": "supplier_outage-5",
+   "type": "supplier_outage",
+   "runs": 3,
+   "skill": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 1.0,
+   "do_nothing": 25430769,
+   "optimiser": 20205,
+   "cost": [
+    20205,
+    20205,
+    20205
+   ]
+  },
+  {
+   "case": "supplier_outage-6",
+   "type": "supplier_outage",
+   "runs": 3,
+   "skill": [
+    0.9998,
+    1.0,
+    0.9998
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.9667,
+   "do_nothing": 38146154,
+   "optimiser": 29201,
+   "cost": [
+    36926,
+    28659,
+    36926
+   ]
+  },
+  {
+   "case": "tariff-2",
+   "type": "tariff",
+   "runs": 3,
+   "skill": [
+    0.9958,
+    0.8054,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": -5.0976,
+   "do_nothing": 447385,
+   "optimiser": 410530,
+   "cost": [
+    410685,
+    417702,
+    410530
+   ]
+  },
+  {
+   "case": "tariff-3",
+   "type": "tariff",
+   "runs": 3,
+   "skill": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 1.0,
+   "do_nothing": 218050,
+   "optimiser": 150678,
+   "cost": [
+    150678,
+    150678,
+    150678
+   ]
+  },
+  {
+   "case": "tariff-4",
+   "type": "tariff",
+   "runs": 3,
+   "skill": [
+    0.9905,
+    0.9905,
+    0.9905
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.5917,
+   "do_nothing": 806114,
+   "optimiser": 594098,
+   "cost": [
+    596121,
+    596121,
+    596121
+   ]
+  },
+  {
+   "case": "tariff-5",
+   "type": "tariff",
+   "runs": 3,
+   "skill": [
+    0.9882,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 0.7305,
+   "do_nothing": 1556926,
+   "optimiser": 1319804,
+   "cost": [
+    1322593,
+    1319804,
+    1319804
+   ]
+  },
+  {
+   "case": "tariff-6",
+   "type": "tariff",
+   "runs": 3,
+   "skill": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "valid": [
+    true,
+    true,
+    true
+   ],
+   "playbook_skill": 1.0,
+   "do_nothing": 451313,
+   "optimiser": 347053,
+   "cost": [
+    347053,
+    347053,
+    347053
+   ]
+  }
+ ],
+ "usd_total": 0.0
+}

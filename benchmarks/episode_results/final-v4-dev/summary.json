@@ -1,0 +1,309 @@
+{
+ "name": "final-v4-dev",
+ "date": "2026-11-04 08:54 UTC",
+ "commit": "4785675+dirty",
+ "agent_version": "v4",
+ "prompt_version": "68248f42aa79",
+ "variant": "full",
+ "provider": "glimmer",
+ "model": "muse-glimmer",
+ "split": "dev",
+ "runs_per_episode": 1,
+ "suite_version": 3,
+ "suite_source": "ShockBench-Flow 0.1.2, task small (gamma 0.62), public generator on root 20261102",
+ "graph": {
+  "components": 160,
+  "suppliers": 254,
+  "assemblies": 8,
+  "revenue_eur": 3400000000
+ },
+ "episodes": 20,
+ "runs": 20,
+ "rss": {
+  "agent": 0.9634,
+  "playbook": 0.8921,
+  "replanner": 0.9546
+ },
+ "rss_interval": {
+  "agent": [
+   0.9286,
+   0.9876
+  ],
+  "playbook": [
+   0.8047,
+   0.9585
+  ],
+  "replanner": [
+   0.9174,
+   0.9811
+  ]
+ },
+ "by_level": {
+  "1": {
+   "episodes": 5,
+   "agent": null,
+   "playbook": null,
+   "replanner": null,
+   "do_nothing": 3149,
+   "optimiser": 3149
+  },
+  "2": {
+   "episodes": 5,
+   "agent": 0.8204,
+   "playbook": 0.8637,
+   "replanner": 0.8755,
+   "do_nothing": 26732325,
+   "optimiser": 174981
+  },
+  "3": {
+   "episodes": 5,
+   "agent": 0.9481,
+   "playbook": 0.9418,
+   "replanner": 0.9268,
+   "do_nothing": 272168225,
+   "optimiser": 1640856
+  },
+  "4": {
+   "episodes": 5,
+   "agent": 0.9961,
+   "playbook": 0.8594,
+   "replanner": 0.9872,
+   "do_nothing": 1082824382,
+   "optimiser": 3244224
+  }
+ },
+ "cost_total": {
+  "do_nothing": 1381728081,
+  "optimiser": 5063210,
+  "playbook": 176215098,
+  "replanner": 41988850,
+  "agent": 28095322
+ },
+ "agent_better_than_playbook": 0.9,
+ "turns_per_episode": 5.25,
+ "failed_turns": 0,
+ "usd_per_episode": 0.0,
+ "usd_total": 0.0,
+ "rows": [
+  {
+   "episode": "sb-0",
+   "split": "dev",
+   "level": 1,
+   "do_nothing": 0,
+   "optimiser": 0,
+   "playbook": 0,
+   "replanner": 0,
+   "agent": 0,
+   "runs": 1
+  },
+  {
+   "episode": "sb-1",
+   "split": "dev",
+   "level": 3,
+   "do_nothing": 88108846,
+   "optimiser": 277105,
+   "playbook": 398921,
+   "replanner": 333152,
+   "agent": 398921,
+   "runs": 1
+  },
+  {
+   "episode": "sb-10",
+   "split": "dev",
+   "level": 4,
+   "do_nothing": 193325000,
+   "optimiser": 553019,
+   "playbook": 22697053,
+   "replanner": 675515,
+   "agent": 765014,
+   "runs": 1
+  },
+  {
+   "episode": "sb-12",
+   "split": "dev",
+   "level": 3,
+   "do_nothing": 89248846,
+   "optimiser": 156905,
+   "playbook": 10495471,
+   "replanner": 341324,
+   "agent": 435509,
+   "runs": 1
+  },
+  {
+   "episode": "sb-13",
+   "split": "dev",
+   "level": 2,
+   "do_nothing": 3748334,
+   "optimiser": 132456,
+   "playbook": 2823720,
+   "replanner": 1295788,
+   "agent": 2630271,
+   "runs": 1
+  },
+  {
+   "episode": "sb-14",
+   "split": "dev",
+   "level": 4,
+   "do_nothing": 274116410,
+   "optimiser": 786490,
+   "playbook": 19530203,
+   "replanner": 13561420,
+   "agent": 3440889,
+   "runs": 1
+  },
+  {
+   "episode": "sb-16",
+   "split": "dev",
+   "level": 3,
+   "do_nothing": 31455723,
+   "optimiser": 105848,
+   "playbook": 1251935,
+   "replanner": 6943078,
+   "agent": 1017279,
+   "runs": 1
+  },
+  {
+   "episode": "sb-17",
+   "split": "dev",
+   "level": 2,
+   "do_nothing": 2280000,
+   "optimiser": 654,
+   "playbook": 32690,
+   "replanner": 16345,
+   "agent": 16345,
+   "runs": 1
+  },
+  {
+   "episode": "sb-19",
+   "split": "dev",
+   "level": 3,
+   "do_nothing": 37554231,
+   "optimiser": 995648,
+   "playbook": 4235912,
+   "replanner": 2640989,
+   "agent": 2640989,
+   "runs": 1
+  },
+  {
+   "episode": "sb-21",
+   "split": "dev",
+   "level": 3,
+   "do_nothing": 25800579,
+   "optimiser": 105351,
+   "playbook": 1005870,
+   "replanner": 11180307,
+   "agent": 11201374,
+   "runs": 1
+  },
+  {
+   "episode": "sb-27",
+   "split": "dev",
+   "level": 4,
+   "do_nothing": 205587308,
+   "optimiser": 560887,
+   "playbook": 772139,
+   "replanner": 641733,
+   "agent": 772139,
+   "runs": 1
+  },
+  {
+   "episode": "sb-3",
+   "split": "dev",
+   "level": 2,
+   "do_nothing": 16953846,
+   "optimiser": 132,
+   "playbook": 5298,
+   "replanner": 4139,
+   "agent": 4139,
+   "runs": 1
+  },
+  {
+   "episode": "sb-4",
+   "split": "dev",
+   "level": 1,
+   "do_nothing": 1214,
+   "optimiser": 1214,
+   "playbook": 45339,
+   "replanner": 1214,
+   "agent": 1214,
+   "runs": 1
+  },
+  {
+   "episode": "sb-43",
+   "split": "dev",
+   "level": 4,
+   "do_nothing": 204208357,
+   "optimiser": 783035,
+   "playbook": 111207586,
+   "replanner": 1543271,
+   "agent": 1766113,
+   "runs": 1
+  },
+  {
+   "episode": "sb-44",
+   "split": "dev",
+   "level": 4,
+   "do_nothing": 205587308,
+   "optimiser": 560794,
+   "playbook": 772446,
+   "replanner": 642902,
+   "agent": 709295,
+   "runs": 1
+  },
+  {
+   "episode": "sb-5",
+   "split": "dev",
+   "level": 1,
+   "do_nothing": 0,
+   "optimiser": 0,
+   "playbook": 1656,
+   "replanner": 0,
+   "agent": 0,
+   "runs": 1
+  },
+  {
+   "episode": "sb-6",
+   "split": "dev",
+   "level": 2,
+   "do_nothing": 3503145,
+   "optimiser": 41727,
+   "playbook": 932735,
+   "replanner": 2165554,
+   "agent": 2293727,
+   "runs": 1
+  },
+  {
+   "episode": "sb-7",
+   "split": "dev",
+   "level": 2,
+   "do_nothing": 247000,
+   "optimiser": 12,
+   "playbook": 78,
+   "replanner": 184,
+   "agent": 171,
+   "runs": 1
+  },
+  {
+   "episode": "sb-8",
+   "split": "dev",
+   "level": 1,
+   "do_nothing": 389,
+   "optimiser": 389,
+   "playbook": 389,
+   "replanner": 389,
+   "agent": 389,
+   "runs": 1
+  },
+  {
+   "episode": "sb-9",
+   "split": "dev",
+   "level": 1,
+   "do_nothing": 1545,
+   "optimiser": 1545,
+   "playbook": 5657,
+   "replanner": 1545,
+   "agent": 1545,
+   "runs": 1
+  }
+ ]
+}

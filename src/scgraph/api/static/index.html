@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tierscope by Mantis Analytics: supply-chain graph, exposure and review" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Tierscope by Mantis Analytics</title>
+    <script>
+      // Apply the stored or system theme before the first paint.
+      try {
+        var t = localStorage.getItem("tierscope.theme");
+        if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.classList.toggle("dark", t === "dark");
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-oAV6DIXL.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-CXeH5X-M.js">
+    <link rel="modulepreload" crossorigin href="/assets/States-DHNYzdAr.js">
+    <link rel="modulepreload" crossorigin href="/assets/dist-BGNhWDNn.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CdaAuTSY.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+[project]
+name = "scgraph"
+version = "0.1.0"
+description = "Supply chain graph for the Meta AI hackathon"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.40",
+    "fastapi>=0.162.0",
+    "httpx[socks]>=0.28.1",
+    "networkx>=3.7",
+    "numpy>=2.4",
+    "openpyxl>=3.1.5",
+    "pdfplumber>=0.11.10",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+scgraph = "scgraph.cli:main"
+
+[dependency-groups]
+dev = [
+    "fpdf2>=2.8.9",
+    "httpx>=0.28.1",
+    "pytest>=8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scgraph"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "live: calls a real provider; needs keys and SCGRAPH_LIVE_TESTS=1",
+]

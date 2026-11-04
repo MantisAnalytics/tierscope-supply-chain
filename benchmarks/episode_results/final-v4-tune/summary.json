@@ -1,0 +1,529 @@
+{
+ "name": "final-v4-tune",
+ "date": "2026-11-04 08:54 UTC",
+ "commit": "4785675+dirty",
+ "agent_version": "v4",
+ "prompt_version": "68248f42aa79",
+ "variant": "full",
+ "provider": "glimmer",
+ "model": "muse-glimmer",
+ "split": "tune",
+ "runs_per_episode": 1,
+ "suite_version": 3,
+ "suite_source": "ShockBench-Flow 0.1.2, task small (gamma 0.62), public generator on root 20261102",
+ "graph": {
+  "components": 160,
+  "suppliers": 254,
+  "assemblies": 8,
+  "revenue_eur": 3400000000
+ },
+ "episodes": 40,
+ "runs": 40,
+ "rss": {
+  "agent": 0.967,
+  "playbook": 0.8843,
+  "replanner": 0.9524
+ },
+ "rss_interval": {
+  "agent": [
+   0.9432,
+   0.9844
+  ],
+  "playbook": [
+   0.8156,
+   0.9525
+  ],
+  "replanner": [
+   0.9194,
+   0.9757
+  ]
+ },
+ "by_level": {
+  "1": {
+   "episodes": 10,
+   "agent": null,
+   "playbook": null,
+   "replanner": null,
+   "do_nothing": 71955,
+   "optimiser": 71955
+  },
+  "2": {
+   "episodes": 10,
+   "agent": 0.4479,
+   "playbook": 0.8406,
+   "replanner": 0.9185,
+   "do_nothing": 17247885,
+   "optimiser": 484602
+  },
+  "3": {
+   "episodes": 10,
+   "agent": 0.9797,
+   "playbook": 0.8577,
+   "replanner": 0.9457,
+   "do_nothing": 943212035,
+   "optimiser": 2912390
+  },
+  "4": {
+   "episodes": 10,
+   "agent": 0.9742,
+   "playbook": 0.9247,
+   "replanner": 0.9622,
+   "do_nothing": 2273302039,
+   "optimiser": 6367672
+  }
+ },
+ "cost_total": {
+  "do_nothing": 3233833915,
+  "optimiser": 9836620,
+  "playbook": 318216640,
+  "replanner": 147942086,
+  "agent": 96674394
+ },
+ "agent_better_than_playbook": 0.825,
+ "turns_per_episode": 5.5,
+ "failed_turns": 1,
+ "usd_per_episode": 0.0,
+ "usd_total": 0.0,
+ "rows": [
+  {
+   "episode": "sb-100",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 8452947,
+   "optimiser": 66,
+   "playbook": 12626,
+   "replanner": 4304,
+   "agent": 7499666,
+   "runs": 1
+  },
+  {
+   "episode": "sb-101",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 1293,
+   "optimiser": 1293,
+   "playbook": 88840,
+   "replanner": 1293,
+   "agent": 1293,
+   "runs": 1
+  },
+  {
+   "episode": "sb-103",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 103822,
+   "optimiser": 98445,
+   "playbook": 109555,
+   "replanner": 98445,
+   "agent": 98445,
+   "runs": 1
+  },
+  {
+   "episode": "sb-104",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 20775,
+   "optimiser": 20775,
+   "playbook": 66296,
+   "replanner": 20775,
+   "agent": 20775,
+   "runs": 1
+  },
+  {
+   "episode": "sb-105",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 3329,
+   "optimiser": 3329,
+   "playbook": 609776,
+   "replanner": 3329,
+   "agent": 3329,
+   "runs": 1
+  },
+  {
+   "episode": "sb-110",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 180403,
+   "optimiser": 180403,
+   "playbook": 299713,
+   "replanner": 180403,
+   "agent": 180403,
+   "runs": 1
+  },
+  {
+   "episode": "sb-121",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 1140000,
+   "optimiser": 654,
+   "playbook": 24517,
+   "replanner": 8172,
+   "agent": 8172,
+   "runs": 1
+  },
+  {
+   "episode": "sb-124",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 2861038,
+   "optimiser": 12345,
+   "playbook": 158209,
+   "replanner": 35555,
+   "agent": 35555,
+   "runs": 1
+  },
+  {
+   "episode": "sb-126",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 2489337,
+   "optimiser": 57580,
+   "playbook": 917249,
+   "replanner": 323117,
+   "agent": 657512,
+   "runs": 1
+  },
+  {
+   "episode": "sb-193",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 178562853,
+   "optimiser": 562882,
+   "playbook": 74943674,
+   "replanner": 4298405,
+   "agent": 4303125,
+   "runs": 1
+  },
+  {
+   "episode": "sb-212",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 49103942,
+   "optimiser": 285372,
+   "playbook": 450122,
+   "replanner": 360277,
+   "agent": 422287,
+   "runs": 1
+  },
+  {
+   "episode": "sb-233",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 151743013,
+   "optimiser": 518588,
+   "playbook": 1219994,
+   "replanner": 543890,
+   "agent": 601080,
+   "runs": 1
+  },
+  {
+   "episode": "sb-235",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 55069466,
+   "optimiser": 80445,
+   "playbook": 6512460,
+   "replanner": 1312674,
+   "agent": 888455,
+   "runs": 1
+  },
+  {
+   "episode": "sb-236",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 102843762,
+   "optimiser": 295608,
+   "playbook": 612198,
+   "replanner": 454836,
+   "agent": 495681,
+   "runs": 1
+  },
+  {
+   "episode": "sb-242",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 40703599,
+   "optimiser": 104560,
+   "playbook": 362419,
+   "replanner": 11119566,
+   "agent": 11240392,
+   "runs": 1
+  },
+  {
+   "episode": "sb-245",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 135790929,
+   "optimiser": 469978,
+   "playbook": 49279621,
+   "replanner": 622767,
+   "agent": 683399,
+   "runs": 1
+  },
+  {
+   "episode": "sb-253",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 33387223,
+   "optimiser": 105351,
+   "playbook": 1025502,
+   "replanner": 17895471,
+   "agent": 1445250,
+   "runs": 1
+  },
+  {
+   "episode": "sb-267",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 112583526,
+   "optimiser": 308323,
+   "playbook": 476674,
+   "replanner": 419484,
+   "agent": 476674,
+   "runs": 1
+  },
+  {
+   "episode": "sb-271",
+   "split": "tune",
+   "level": 3,
+   "do_nothing": 83423723,
+   "optimiser": 181283,
+   "playbook": 1800640,
+   "replanner": 16986642,
+   "agent": 1438667,
+   "runs": 1
+  },
+  {
+   "episode": "sb-724",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 208066689,
+   "optimiser": 588344,
+   "playbook": 794093,
+   "replanner": 10398538,
+   "agent": 10398538,
+   "runs": 1
+  },
+  {
+   "episode": "sb-733",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 220441910,
+   "optimiser": 745704,
+   "playbook": 941488,
+   "replanner": 35104482,
+   "agent": 35104482,
+   "runs": 1
+  },
+  {
+   "episode": "sb-764",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 198077436,
+   "optimiser": 556150,
+   "playbook": 23200513,
+   "replanner": 16328330,
+   "agent": 741037,
+   "runs": 1
+  },
+  {
+   "episode": "sb-766",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 220272115,
+   "optimiser": 624172,
+   "playbook": 829423,
+   "replanner": 650908,
+   "agent": 717300,
+   "runs": 1
+  },
+  {
+   "episode": "sb-79",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 0,
+   "optimiser": 0,
+   "playbook": 16345,
+   "replanner": 0,
+   "agent": 0,
+   "runs": 1
+  },
+  {
+   "episode": "sb-798",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 226310583,
+   "optimiser": 658198,
+   "playbook": 26647615,
+   "replanner": 658198,
+   "agent": 768199,
+   "runs": 1
+  },
+  {
+   "episode": "sb-80",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 2318,
+   "optimiser": 2318,
+   "playbook": 2318,
+   "replanner": 2318,
+   "agent": 2318,
+   "runs": 1
+  },
+  {
+   "episode": "sb-803",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 198077436,
+   "optimiser": 556150,
+   "playbook": 23186352,
+   "replanner": 639745,
+   "agent": 643787,
+   "runs": 1
+  },
+  {
+   "episode": "sb-81",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 0,
+   "optimiser": 0,
+   "playbook": 446890,
+   "replanner": 0,
+   "agent": 0,
+   "runs": 1
+  },
+  {
+   "episode": "sb-815",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 225833951,
+   "optimiser": 654024,
+   "playbook": 1596318,
+   "replanner": 664931,
+   "agent": 671917,
+   "runs": 1
+  },
+  {
+   "episode": "sb-828",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 254536667,
+   "optimiser": 584917,
+   "playbook": 16851601,
+   "replanner": 16463663,
+   "agent": 4359765,
+   "runs": 1
+  },
+  {
+   "episode": "sb-869",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 311158858,
+   "optimiser": 789518,
+   "playbook": 82126241,
+   "replanner": 10406131,
+   "agent": 10630226,
+   "runs": 1
+  },
+  {
+   "episode": "sb-880",
+   "split": "tune",
+   "level": 4,
+   "do_nothing": 210526394,
+   "optimiser": 610495,
+   "playbook": 928220,
+   "replanner": 689724,
+   "agent": 831840,
+   "runs": 1
+  },
+  {
+   "episode": "sb-90",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 43587,
+   "optimiser": 43587,
+   "playbook": 43587,
+   "replanner": 43587,
+   "agent": 43587,
+   "runs": 1
+  },
+  {
+   "episode": "sb-92",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 0,
+   "optimiser": 0,
+   "playbook": 0,
+   "replanner": 0,
+   "agent": 0,
+   "runs": 1
+  },
+  {
+   "episode": "sb-93",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 957706,
+   "optimiser": 3772,
+   "playbook": 121580,
+   "replanner": 672859,
+   "agent": 758313,
+   "runs": 1
+  },
+  {
+   "episode": "sb-95",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 654,
+   "optimiser": 654,
+   "playbook": 888,
+   "replanner": 654,
+   "agent": 654,
+   "runs": 1
+  },
+  {
+   "episode": "sb-96",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 375037,
+   "optimiser": 19876,
+   "playbook": 81618,
+   "replanner": 415037,
+   "agent": 385037,
+   "runs": 1
+  },
+  {
+   "episode": "sb-97",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 96406,
+   "optimiser": 92128,
+   "playbook": 103959,
+   "replanner": 92128,
+   "agent": 95787,
+   "runs": 1
+  },
+  {
+   "episode": "sb-98",
+   "split": "tune",
+   "level": 1,
+   "do_nothing": 0,
+   "optimiser": 0,
+   "playbook": 0,
+   "replanner": 0,
+   "agent": 0,
+   "runs": 1
+  },
+  {
+   "episode": "sb-99",
+   "split": "tune",
+   "level": 2,
+   "do_nothing": 591190,
+   "optimiser": 19333,
+   "playbook": 1327506,
+   "replanner": 21447,
+   "agent": 21447,
+   "runs": 1
+  }
+ ]
+}
